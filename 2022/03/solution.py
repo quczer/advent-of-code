@@ -31,10 +31,10 @@ def process_input_second(lines: List[str]) -> List[List[str]]:
 
 def fold(xs: List[X], n: int) -> List[List[X]]:
     assert len(xs) % n == 0
-    result = []
+    xss = []
     for i in range(0, len(xs), n):
-        result.append(xs[i : i + n])
-    return result
+        xss.append(xs[i : i + n])
+    return xss
 
 
 def get_priority(letter: str) -> int:
